@@ -1157,6 +1157,12 @@ class TemplateProcessor
 
         return $this;
     }
+	
+	
+
+    public function insertCustomXml($name, $data){
+        return $this->replaceXmlBlock($name, $data);
+    }
 
     /**
      * Find start and end of XML block containing the given macro
